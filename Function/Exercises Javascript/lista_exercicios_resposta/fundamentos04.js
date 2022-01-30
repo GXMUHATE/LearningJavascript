@@ -3,4 +3,4 @@ function divisao (dividendo, divisor) {
     console.log(`Resto: ${dividendo % divisor}`)
 }
 
-divisao(11, 4)
+divisao(5, 2)

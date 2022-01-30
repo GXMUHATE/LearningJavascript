@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+         let dados = []
+        function validar(){
+            var msg = window.document.getElementById('msg')
+            var nom = window.document.getElementById('name').value
+            var alt = window.document.getElementById('altura').value
+            var sex = window.document.getElementsByName('sexo')
+            
+            for(i = 0; i < sex.length; i++) {
+                if(sex[i].checked)
+                var sexx = sex[i].value;
+            }
+            msg.innerHTML += `O nome e:${nom}`
+            const pessoa = {
+                nome: nom,
+                altura:alt,
+                sexo:sexx
+            }   
+            dados.push(pessoa)
+        }
+        let maiorAltura
+        let numeroMulheres
+        function mostrar(){
+            
+            dados.forEach(function(item, indice, array){
+                msg.innerHTML +=`<br>${indice+1}:, ${item.nome}, ${item.altura}, ${item.sexo}`
+                maiorAltura = Math.max.apply(Math, array.map(function(o) { return o.altura; }))
+                
+    })
+    
+    msg.innerHTML +=`<br>A maior altura é: ${maiorAltura}`
+
+        }
+       
+    </script>
+
+</head>
+<body>
+<form>
+    <label for="name">Nome</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="altura">Altura</label><br>
+    <input type="text" id="altura" name="altura">
+    <input type="radio" id="Masculino" name="sexo" value="Masculino">
+  <label for="html">Masculino</label><br>
+  <input type="radio" id="Feminino" name="sexo" value="Feminino">
+  <label for="Feminino">Feminino</label><br>
+  <input type="button" onclick="validar()" value="Cadastrar" >
+</form>
+
+<form>
+  <input type="button" onclick="mostrar()" value="Mostra" >
+</form>
+<div id="msg">
+    Aqui vai aparecer a o resultado...
+</div>
+
+</body>
+</html>
