@@ -2,3 +2,13 @@ Use npm i --save axios to install axios dependency and include inside the file p
 
 use npm install --save-dev axios@0.17.1 -E, to install a specific version 
 of the dependency you want but to be used only to development environment
+
+***
+when using scripts of package.json:
+run npm i, to instal again the folder node_modules, if you already define the dependencies inside the 
+file package.json it will install again all.
+
+to change the starting file just change the file inside the main
+
+use npm run "nameofscript",
+use npm start, for predefine scripts of node
