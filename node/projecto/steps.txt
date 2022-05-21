@@ -1,0 +1,22 @@
+1 - npm init -y
+
+2 - npm i --save express@4.16.2 -E
+
+3 - create a folder "src"
+
+4 - create a file "server.js" inside "src" we configure express where we have all 
+configuration of our server
+
+5 - after filing the file with code, you can run it using ctrl + option + N or you can go to terminal
+and go to folder src like this: node src/server.js, it will execute on terminal and show that the port 
+is in use. you can cancel the execution on output by clicking ctrl + option + M.
+
+6 - go to file "package.json", change the main field to the server file: "src/server.js"
+change also the script, add: "start": "nodemon",
+if you want to install inside the project just: npm i --save nodemon, but
+we use nodemon on a dev version, so use this:
+npm i --save-dev nodemon@2.0.16 -E
+
+7 - now you can run npm start. It will start node by going to the server.js that we configured on package.json
+
+8 - now you can test it on POSTMAN by puttin this on the url, using get method: http://localhost:3003/produtos
