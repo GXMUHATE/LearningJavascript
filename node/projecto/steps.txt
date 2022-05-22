@@ -20,3 +20,12 @@ npm i --save-dev nodemon@2.0.16 -E
 7 - now you can run npm start. It will start node by going to the server.js that we configured on package.json
 
 8 - now you can test it on POSTMAN by puttin this on the url, using get method: http://localhost:3003/produtos
+
+9 - after configuration of dataBase.js file, you go to POSTMAN and use this conf:
+Post, uxe: x-www-form-urlencoded, then input nome and preco.
+it generates an error, and to correct it we need to follow step 10.
+
+10 - npm -i --save body-parser@1.18.2 -E,
+than import this to server.js file, const bodyParser = require('body-parser'),
+than add this on server.js file, app.use(bodyParser.urlencoded({extended: true}))
+so that the body parser treats all the requisitions using the urlencoded
