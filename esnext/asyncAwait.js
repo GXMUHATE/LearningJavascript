@@ -1,6 +1,5 @@
 // com promise
 const http = require('http')
-//const { reject } = require('lodash')
 
 const getTurma = letra => {
     const url = `http://files.cod3r.com.br/curso-js/turma${letra}.json`
@@ -23,10 +22,15 @@ const getTurma = letra => {
     })
 }
 
-Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
-    .then(turmas => [].concat(...turmas))
-    .then(alunos => alunos.map(aluno => aluno.nome))
-    .then(nomes => console.log(nomes))
-    .catch(e => console.log(e.message))
+// Recurso de ES8
+// Objectivo de simplificar o uso de promises...
+let obterAlunos = async () => {
+    const ta = await getTurma('A')
+    const tb = await getTurma('B')
+    const tc = await getTurma('C')
+    return [].concat(ta, tb, tc)
+} // retorna um objecto AsyncFunction
 
-getTurma('D').catch(e => console.log(e.message))
+obterAlunos()
+    .then(alunos => alunos.map(a => a.nome))
+    .then(nomes => console.log(nomes))
