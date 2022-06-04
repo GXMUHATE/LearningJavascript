@@ -7,6 +7,6 @@ function falarDepoisDe(segundos, frase) {
 }
 
 falarDepoisDe(3, 'Maravilha!')
-.then((frase => frase.concat(' ?!?'))
-.then(outraFrase => console.log(outraFrase))
-.catch(e => console.log(e)))
+    .then(frase => frase.concat('?!?'))
+    .then(outraFrase => console.log(outraFrase))
+    .catch(e => console.log(e))
