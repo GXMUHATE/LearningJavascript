@@ -1,0 +1,2 @@
+1. create the package. json using: npm init -y
+2. create modules that we going to need: npm i --save express@4.16.3 body-parser@1.18.2 -E
