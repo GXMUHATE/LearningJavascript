@@ -6,6 +6,28 @@
     <title>Anatomia CSS</title>
     <style>
         /* ... */
+        .selector{
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /*multiplos valores*/
+            border: solid 5px navy;
+            font-family: Arialo, Helveticda, sans-serif;
+            /*  functions*/
+            width: calc(100% - 400px);
+            background-color: rgb(34, 153, 189);
+
+        }
+
+        /* using pseudo-class */
+        .selector:hover{
+            background-color: orangered;
+        }
+
+        /*using pseudo-element*/
+        .selector::first-letter{
+            font-size: 50px;
+        }
     </style>
 </head>
 
