@@ -5,7 +5,27 @@
     <meta charset="UTF-8">
     <title>Display</title>
     <style>
-        /* ... */
+        body{
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+
+        ul{ padding: 0;}
+        div{background-color: seagreen;}
+        span{background-color: dodgerblue;}
+        li{ background-color: purple;}
+
+        div, span, li {
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+            /*display: block; puts everything on each line*/
+            display: inline-block; /*when you use inline-block, you need to remove the sapcing 
+            between html elements to remove the line or space that appears*/
+        }
     </style>
 </head>
 
