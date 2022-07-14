@@ -17,7 +17,27 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino="escritório"]') //or you can use ('#compras')
+        console.log('Elemento "ul".............')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino)
+        console.log('getAttribute', lista.getAttribute('destino'))
+        console.log('hasAttribute', lista.hasAttribute('destino'))
+        lista.setAttribute('destino', 'empresa') // change an attribute
+        lista.setAttribute('status', 'aberto') //add an attribute
+        lista.removeAttribute('destino')
+        //there is a difference on declaring attributes with "-" and without "-".
+        //this can be verified with the method "dataset"
+        console.log(lista.dataset)
+        console.log(lista.dataset.urgencia)
+        lista.dataset.urgencia = 4
+        console.log(lista.getAttribute('data-urgencia'))
+
+        //be carefull
+        const label = document.querySelector('label')
+        console.log(label.htmlFor)
+        console.log(label.getAttribute('for'))
+
     </script>
 </body>
 
