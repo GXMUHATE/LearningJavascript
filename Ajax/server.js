@@ -28,5 +28,14 @@ app.post('/upload', (req, res) => {
     })
 })
 
+//we need the bodyparser configured for this to work
+//because we are getting files from a form
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id: 1
+    })
+})
+
 //app.get('/teste', (req, res) => res.send(new Date)) used just for testing
 app.listen(8080, () => console.log('Executando...'))
