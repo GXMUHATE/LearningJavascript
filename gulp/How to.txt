@@ -1,3 +1,6 @@
 1 - rum "npm i" inside gulp terminal folder
 
 2 - run "sudo npm i -g gulp-cli"
+
+3 - after configuration of gulpfile.js, you run inside the folder where
+you have the gulpfile.js you run "gulp"
