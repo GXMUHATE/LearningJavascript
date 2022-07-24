@@ -4,3 +4,11 @@
 
 3 - after configuration of gulpfile.js, you run inside the folder where
 you have the gulpfile.js you run "gulp"
+
+*****
+Lesson of Javascript
+1 - configure the gulpfile with function using gulp and pipe
+
+2 - run on terminal the comand gulp to execute the tranformation.
+
+3 - run the tranformed file using "node"
