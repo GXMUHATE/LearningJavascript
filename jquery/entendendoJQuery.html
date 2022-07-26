@@ -21,7 +21,7 @@
 
         $.fn.fundoVerde = function () {
             this.css('background-color', 'green')
-            return this // this makes it to be cascaded to concatenate with other functions
+            return this // this makes it to be chained to concatenate with other functions
         }
 
         $('body').fundoVerde().fadeOut(1000)
