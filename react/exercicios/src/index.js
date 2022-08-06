@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client';
 import Pai from './components/Pai';
+import Filho from './components/Filho';
 // import Saudacao from './components/Saudacao';
 // import BomDia from './components/BomDia'
 //import Multi, { BoaNoite } from './components/Multiplos';
@@ -15,7 +16,10 @@ const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(
 <div>
-<Pai nome="Graçane" sobrenome="Muhate" />
+<Pai nome="Graçane" sobrenome="Muhate">
+    <Filho nome="Alana"/>
+    <Filho nome="Deo"/>
+</Pai>
 </div>
 );
 
