@@ -1,0 +1,11 @@
+{
+    "users": [{
+        "id": 1,
+        "name": "Gracane Muhate",
+        "email": "gxmuhate@gmail.com"
+    }, {
+        "id": 2,
+        "name": "Lopita Bruda",
+        "email": "lbruda@gmail.com"
+    }]
+}
