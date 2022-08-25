@@ -1,5 +1,5 @@
 export default function Header(props) {
-    console.log(props)
+    //props are read only
     return (
         <header>
             <h1> {props.titulo}</h1>
