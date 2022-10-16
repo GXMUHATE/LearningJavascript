@@ -13,6 +13,7 @@ export default function Inicio() {
             <Navigator text="Estilo" destiny="/estilos"/>
             <Navigator text="Example" destiny="/example" color="#9400de"/>
             <Navigator text="JSX" destiny="/jsx" color="crimson"/>
+            <Navigator text="Navigation #01" destiny="/navigation" color="purple"/>
         </div>
     )
 }
