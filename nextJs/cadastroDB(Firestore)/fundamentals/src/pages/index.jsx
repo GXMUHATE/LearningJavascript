@@ -16,6 +16,7 @@ export default function Inicio() {
             <Navigator text="Navigation #01" destiny="/navigation" color="purple"/>
             <Navigator text="Navigation #02" destiny="/client/mpt/123" color="green"/>
             <Navigator text="Component with state" destiny="/state" color="orange"/>
+            <Navigator text="Integration with API #01" destiny="/integrationAPI" color="red"/>
         </div>
     )
 }
